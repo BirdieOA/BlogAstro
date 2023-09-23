@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Mi primera publicacion en el blog'
 pubDate: 2023-09-21
 description: 'Esta es la primera publicacion de mi nuevo blog Astro'
@@ -8,11 +9,6 @@ image:
       alt: 'Ilustracion de flores'
 tags: ["blog", "astro", "primavera", "flores"]
 ---
-
-# Mi primera publicacion en el blog
-
-
-Published on: 2023-09-21
 
 Bienvenidos a mi blog
 

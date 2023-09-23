@@ -1,8 +1,7 @@
 ---
 import '../styles/global.css'
-import Navigation from '../components/Navigation.astro';
-import Footer from '../components/Footer.astro';
 const pageTitle = "Sobre mi";
+import BaseLayout from '../layouts/BaseLayout.astro';
 
 const identity = {
   firstName: "Birdie",
@@ -22,13 +21,7 @@ const fontWeight = "bold";
 const textCase = "uppercase";
 ---
 
-<html lang="es">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
+<BaseLayout pageTitle={pageTitle}>
 
 	<style define:vars={{skillColor, fontWeight, textCase}}>
     h1{
@@ -44,10 +37,7 @@ const textCase = "uppercase";
         font-weight: var(--fontWeight);
         text-transform: var(--textCase);
       }
-  </style></head>
-	<body>
-    <Navigation/>
-		<h1>{pageTitle}</h1>
+  </style>
     <h2>este es otro texto</h2>
     <p>estoy siguiendo un tutorial</p>
     <p> Algunos datos sobre mi:</p>
@@ -64,6 +54,7 @@ const textCase = "uppercase";
       {happy && <p>Estoy feliz de aprende Astro</p>}
       {finished && <p>He terminado este tutorial</p>}
       {goal === 3 ? <p> Mi objetivo es terminar en 3 dias</p> : <p> Mi objetivo no son 3 dias</p>}
-<Footer/>
+
+</BaseLayout>
 	</body>
 </html>
