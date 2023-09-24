@@ -1,5 +1,5 @@
 html{
-  background-color: #1e1e1e;
+  background-color: #CACBBA;
   font-family: sans-serif;
 }
 
@@ -78,8 +78,16 @@ h1 {
     padding: 15px 20px;
   }
 
-
   .hamburger{
     display: none;
   }
+}
+
+html.dark {
+  background-color: #1e1e1e;
+  color: #fefefe;
+}
+
+.dark .nav-links a {
+  color: #0e7490;
 }
