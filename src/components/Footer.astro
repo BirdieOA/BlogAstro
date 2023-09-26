@@ -1,13 +1,23 @@
 ---
 const platform = "github";
 const username = "withastro";
+import IconIg from './IconIg.astro';
+import IconFc from './IconFc.astro';
+
 import Social from './Social.astro';
 ---
 <style>
 footer{
   display: flex;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 5rem;
+  align-items: center;
+
+}
+
+a{
+  font-weight: 900;
+  color: var(--colorUno)
 }
 
 
@@ -15,10 +25,13 @@ footer{
 
 
 <footer>
-  <p>Mas informacion sobre mis proyectos en <a href={`https://www.${platform}.com/${username}`}> {platform}</a></p>
+  <p>Mis proyectos en <a href={`https://www.${platform}.com/${username}`}> {platform}</a></p>
 
-  <Social platform="twitter" username="astrodotbuild" />
-  <Social platform="github" username="withastro" />
-  <Social platform="youtube" username="astrodotbuild" />
+  <!-- <Social platform="twitter" username="astrodotbuild" /> -->
+  <!-- <Social platform="github" username="withastro" />
+  <Social platform="youtube" username="astrodotbuild" /> -->
+    <a href="https://www.instagram.com/conceptohexagono/"><IconIg/></a>
+    <a href="https://www.facebook.com/profile.php?id=100092173717415"><IconFc/></a>
+
 
 </footer>

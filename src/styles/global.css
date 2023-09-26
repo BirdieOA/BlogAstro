@@ -1,28 +1,49 @@
-html{
-  background-color: #CACBBA;
+:root {
+  --dark: #061116;
+  --light: #f5fbe9;
+  --colorUno: #0e7490;
+  --colorDos: #818cf8;
+  --colorTres: #fde68a;
+  --botonDark: #475569;
+  --botonLight: #a5b4fc;
+}
+
+html {
+  background-color: var(--light);
   font-family: sans-serif;
+  overflow-y: scroll;
+  color: var(--dark);
 }
 
-body{
+body {
   margin: 0 auto;
-  width: 100%;
-  max-width: 80ch;
+  width: 800px;
+  max-width: calc(100% - 4rem);
   padding: 1rem;
-  line-height: 1.5;
-  color: purple;
+  line-height: 1.6;
+  font-size: 20px;
 }
 
-
+/* 
 * {
   box-sizing: border-box;
-}
+} */
 
 h1 {
-  margin: 1rem 0;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1;
+  text-align: center;
+  margin: 0em;
 }
 
-/* nav styles */
+h3 {
+display: flex;
+justify-content: center;
+margin-bottom: 20rem;
+}
+
+/* navbar styles */
 
 .hamburger {
   padding-right: 20px;
@@ -35,13 +56,18 @@ h1 {
   height: 5px;
   margin-bottom: 10px;
   background-color: #0e7490;
+  border-radius: 5px;
 }
 
+.menu{
+  display: flex;
+  justify-content: space-between;
+  
+}
 .nav-links {
   width: 100%;
   top: 5rem;
   left: 48px;
-  background-color: darkslategrey;
   display: none;
   margin: 0;
 }
@@ -56,10 +82,12 @@ h1 {
   text-transform: uppercase;
 }
 
-.nav-links a:hover,
+/* .nav-links a:hover,
 .nav-links a:focus {
-  background-color: peru;
-}
+ 
+} */
+
+
 
 .expanded {
   display: unset;
@@ -67,7 +95,7 @@ h1 {
 
 @media screen and (min-width: 636px) {
   .nav-links {
-    margin-left: 5em;
+    margin-left: 10em;
     display: block;
     position: static;
     width: auto;
@@ -75,19 +103,21 @@ h1 {
   }
   .nav-links a {
     display: inline-block;
-    padding: 15px 20px;
+    padding: 5px 10px;
   }
 
-  .hamburger{
+  .hamburger {
     display: none;
   }
 }
 
 html.dark {
-  background-color: #1e1e1e;
-  color: #fefefe;
+  background-color: var(--dark);
+  color: var(--light);
 }
 
 .dark .nav-links a {
   color: #0e7490;
 }
+
+

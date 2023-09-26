@@ -1,11 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Greeting from '../components/Greeting.jsx';
-const pageTitle = "Inicio del blog";
+const pageTitle = "Birdie | Blog";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-<h2>Subtitulo del blog</h2>
-<Greeting client:load messages={["Hola a todos", "Ciao a tuti", "Hello everyone", "Bonjour à tous" ]}/>
+<h3>En este blog hablamos de tecnología y herramientas para los usuarios.</h3>
+<!-- <Greeting client:load messages={["Hola a todos", "Ciao a tuti", "Hello everyone", "Bonjour à tous" ]}/> -->
 </BaseLayout>
 
