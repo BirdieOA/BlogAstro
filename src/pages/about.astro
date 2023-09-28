@@ -6,15 +6,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const identity = {
   firstName: "Birdie",
   country: "Argentina",
-  occupation: "Diseñadora",
-  hobbies: ["Musica", "Dibujo", "Fotografia"],
+  occupation: "Diseñadora y Desarrolladora web",
+  hobbies: ["Música", "Dibujo", "Fotografía"],
 };
 
-const skills = ["HTML", "CSS", "JAVASCRIPT", "REACT", "ASTRO", "FIGMA"];
-
-const happy = true;
-const finished = true;
-const goal = 3;
+const skills = ["HTML", "CSS", "JAVASCRIPT", "REACT", "NEXT JS", "ASTRO", "FIGMA"];
 
 const skillColor = "#0891b2";
 const fontWeight = "bold";
@@ -37,22 +33,18 @@ const textCase = "uppercase";
         text-transform: var(--textCase);
       }
   </style>
-    <h2>este es otro texto</h2>
-    <p>estoy siguiendo un tutorial</p>
+
     <p> Algunos datos sobre mi:</p>
     <ul>
-      <li>Me llamo {identity.firstName}</li>
-      <li>Vivo en {identity.country} y trabajo como {identity.occupation}</li>
+      <li>Me llamo {identity.firstName}.</li>
+      <li>Vivo en {identity.country} y trabajo como {identity.occupation}.</li>
       {identity.hobbies.length >= 2 &&
-      <li>Dos de mis aficiones son {identity.hobbies[0]} y {identity.hobbies[2]}</li>
+      <li>Dos de mis aficiones son {identity.hobbies[0]} y {identity.hobbies[2]}.</li>
     </ul> }
     <p>Mis habilidades son:</p>
     <ul>
       {skills.map((skill) => <li class="skill">{skill}</li>)}</ul>  
 
-      {happy && <p>Estoy feliz de aprende Astro</p>}
-      {finished && <p>He terminado este tutorial</p>}
-      {goal === 3 ? <p> Mi objetivo es terminar en 3 dias</p> : <p> Mi objetivo no son 3 dias</p>}
 
 </BaseLayout>
 	</body>

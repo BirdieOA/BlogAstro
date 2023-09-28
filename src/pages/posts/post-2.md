@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: Mi segunda publicación en el blog
+title: Tendencias en Diseño web 2023
 author: 'Birdie'
-description: "Después de aprender un poco de Astro, ¡no podía parar!"
+description: "Conoce las tendencias mas utilizadas para sitios web de este 2023"
 image:
     url: "https://docs.astro.build/assets/arc.webp"
     alt: "Miniatura de los arcos de Astro."
