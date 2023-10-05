@@ -5,10 +5,12 @@ pubDate: 2023-09-21
 description: 'Esta es la primera publicacion de mi nuevo blog Astro'
 author: 'Birdie'
 image: 
-      url: ''
-      alt: 'Ilustracion de flores'
+      url: 'public/122.png'
+      alt: 'Ilustracion de accesibilidad'
 tags: ["blog", "accesibilidad", "herramientas", "inclusion"]
 ---
+
+<img src='/public/122.png' alt="Ejemplo de Imagen" width="650" height="150">
 
 
 ## Como hacer que tu página sea mas accesible para personas con discapacidad.
