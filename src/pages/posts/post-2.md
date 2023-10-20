@@ -84,7 +84,15 @@ Este orden podemos encontrarlo en el archivo de
 `` globals.css
 ``
 
+Aquí un breve ejemplo
 
+Antes
+
+<img src='/public/antes.png' class='img' alt="Ejemplo de Imagen" width="500" height="250">
+
+Después
+
+<img src='/public/despues.png' class='img' alt="Ejemplo de Imagen" width="500" height="250">
 
 ## Instalación de tailwindcss-animated
 
@@ -119,7 +127,17 @@ module.exports = {
   ],
 }
 ``
+Aquí un breve ejemplo
 
+<video
+src="/videoPost2.mp4"
+controls
+autoplay
+loop
+height="300"
+width="300">
+
+</video>
 
 Para ver la funcionalidad y todas las animaciones disponibles, puede ingresar al siguiente sitio.
 
