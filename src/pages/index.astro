@@ -4,8 +4,26 @@ import Greeting from '../components/Greeting.jsx';
 const pageTitle = "Birdie Blog";
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout>
+    <div>
+    <img src="/img.png" alt="logo de birdieblog">
+</div>
 <h3>En este blog hablamos de tecnología y herramientas para los usuarios.</h3>
 <!-- <Greeting client:load messages={["Hola a todos", "Ciao a tuti", "Hello everyone", "Bonjour à tous" ]}/> -->
 </BaseLayout>
+
+<style>
+
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ img{
+    width: 200px;
+    height: 200px;
+ }
+
+</style>
 

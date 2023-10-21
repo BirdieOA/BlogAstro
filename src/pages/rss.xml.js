@@ -7,6 +7,6 @@ export async function GET(context) {
     description: 'Herramientas para la comunidad',
     site: context.site,
     items: await pagesGlobToRssItems(import.meta.glob('./**/*.md')),
-    customData: '<language>es</language></language>',
+    customData: '<language>es</language>',
   });
 }

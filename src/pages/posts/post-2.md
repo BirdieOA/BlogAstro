@@ -88,11 +88,11 @@ Aquí un breve ejemplo
 
 Antes
 
-<img src='/public/antes.png' class='img' alt="Ejemplo de Imagen" width="500" height="250">
+<img src='/antes.png' class='img' alt="Ejemplo de Imagen" width="500" height="250">
 
 Después
 
-<img src='/public/despues.png' class='img' alt="Ejemplo de Imagen" width="500" height="250">
+<img src='/despues.png' class='img' alt="Ejemplo de Imagen" width="500" height="250">
 
 ## Instalación de tailwindcss-animated
 
